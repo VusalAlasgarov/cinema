@@ -1,0 +1,112 @@
+@media screen and (max-width:1250px) {
+    .page_2_container {
+        grid-template-columns: 12fr;
+        /* align-items: center; */
+        /* justify-content: center; */
+
+    }
+
+    .page_2_container img {
+        width: 300px;
+        height: 360px;
+    }
+
+    main {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    footer{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #resp-btn {
+        display: inline;
+        margin-top: 10px;
+    }
+
+    .main_nav {
+        gap: 30px;
+    }
+
+    #header_nav {
+        position: fixed;
+        top: 0;
+        left: -230px;
+        background: rgba(0, 0, 0, 0.579);
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        width: 230px;
+        transition: 2s;
+        z-index: 999;
+    }
+
+    .main_nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #resp_check:checked~#header_nav {
+        left: 0;
+    }
+   .movie_cast_container ul li div{
+    /* background-color: red; */
+    width: 15%;
+   }
+   .movie_cast_container h3{
+    text-align: left;
+   }
+   .movie_cast_container button{
+    margin-left: 10%;
+   }
+}
+
+
+@media screen and (max-width:900px) {
+    .footer_container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    footer{
+        padding-bottom: 30px;
+        height: auto;
+
+    }
+    .header_head_container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+/* .main_nav_footer{
+    flex-direction: column;
+    gap: 14px;
+    padding-top: 30px;
+    height: auto;
+} */
+}
+
+@media screen and (max-width:590px){
+    .right_buttons_container{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+@media screen and (max-width:450px){
+    .trailer_container{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .main_nav_footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media screen and (max-width:400px){
+.trailer_container{
+    margin-left: -30px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+}
